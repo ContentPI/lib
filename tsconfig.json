@@ -11,8 +11,20 @@
     "noImplicitThis": false
   },
   "files": [
+    "src/array/index.ts",
+    "src/core/index.ts",
+    "src/files/index.ts",
+    "src/frontend/index.ts",
+    "src/graphql/index.ts",
+    "src/i18n/index.ts",
     "src/index.ts",
+    "src/is/index.ts",
+    "src/languages.ts",
+    "src/object/index.ts",
+    "src/security/index.ts",
     "src/string/index.ts",
+    "src/typescript/index.ts",
+    "src/url/index.ts"
   ],
   "include": ["src/**/*.ts"],
   "exclude": ["node_modules"]
