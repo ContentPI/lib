@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./src",
+    "declaration": true,
+    "esModuleInterop": true,
+    "module": "commonjs",
+    "outDir": "./dist",
+    "strict": true,
+    "target": "esnext",
+    "noImplicitThis": false
+  },
+  "files": [
+    "src/index.ts",
+    "src/string/index.ts",
+  ],
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
+}
