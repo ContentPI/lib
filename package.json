@@ -22,11 +22,18 @@
     }
   },
   "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "@types/babel__core": "^7.1.12",
+    "@types/babel__generator": "^7.6.2",
+    "@types/babel__template": "^7.4.0",
     "@types/dot-object": "^2.1.2",
     "@types/isomorphic-fetch": "^0.0.35",
+    "@types/istanbul-lib-report": "*",
     "@types/jest": "^26.0.20",
     "@types/node": "^14.14.31",
     "@types/slug": "^0.9.1",
+    "@types/yargs-parser": "*",
     "@typescript-eslint/eslint-plugin": "^4.15.1",
     "@typescript-eslint/parser": "^4.15.1",
     "eslint": "^7.20.0",
