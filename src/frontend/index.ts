@@ -23,6 +23,7 @@ interface iAdd {
 interface iProps {
   ccn: string
   data: string[]
+  className?: string
 }
 
 export function buildUrl(params: string[]): string {
@@ -67,7 +68,7 @@ export function add(cssRule: string | any): iAdd {
   }
 }
 
-export function cxGenerator({ ccn, data }: iProps): string {
+export function cxGenerator({ ccn, data, className }: iProps): string {
   const classList = [ccn]
 
   data.forEach(key => {
@@ -75,6 +76,10 @@ export function cxGenerator({ ccn, data }: iProps): string {
       classList.push(`${ccn}-${key}`)
     }
   })
+
+  if (className) {
+    classList.push(className)
+  }
 
   return classList.join(' ')
 }
