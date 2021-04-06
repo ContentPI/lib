@@ -77,7 +77,7 @@ export function cxGenerator({ ccn, data, className }: iProps): string {
     }
   })
 
-  if(className) {
+  if (className) {
     classList.push(className)
   }
 
