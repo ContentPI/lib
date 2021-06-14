@@ -1,7 +1,7 @@
 import { languagesList } from '../languages'
 
 export function isArray(v: unknown): boolean {
-  return Array.isArray(v)
+  return v instanceof Array
 }
 
 export function isDefined(v: unknown): boolean {
