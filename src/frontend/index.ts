@@ -139,3 +139,13 @@ export function invertHexCode(hexCode?: any): string {
 
   return r * 0.299 + g * 0.587 + b * 0.114 > 186 ? '#000000' : '#FFFFFF'
 }
+
+export function getInitialState() {
+  if (typeof window !== 'undefined') {
+    if (window.initialState) {
+      return window.initialState
+    }
+  }
+
+  return {}
+}
