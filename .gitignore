@@ -26,6 +26,7 @@ public/**/*.bundle.js
 public/**/*.bundle.js.gz
 public/app/report.html
 package-lock.json
+yarn.lock
 .DS_Store
 dump.rdb
 
