@@ -12,7 +12,8 @@
     "lint": "eslint . --ext .js,.tsx,.ts",
     "lint:fix": "eslint --ext .tsx,.ts --fix src",
     "test": "jest --config jestconfig.json",
-    "prepublishOnly": "npm run lint && npm run build"
+    "prepublishOnly": "npm run lint && npm run build",
+    "versioning": "./script.sh"
   },
   "author": "Carlos Santana",
   "license": "MIT",

@@ -1,0 +1,24 @@
+name: release
+on:
+  push:
+    branches:
+      - main
+jobs:
+  release:
+    name: publish
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: node
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+          registry-url: https://registry.npmjs.org
+      - run: npm install
+      - run: chmod u+x script.sh
+      - run: git config --global user.email "foggdev@gmail.com"
+      - run: git config --global user.name "Versioning Bot"
+      - run: npm run versioning
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
