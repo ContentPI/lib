@@ -97,7 +97,7 @@ export function getValuesForTable(
   }
 }
 
-export function getEmptyValues(values: any, required: any = []) {
+export function getEmptyValues(values: any, required: string[] = []) {
   const emptyValues: any = {}
 
   Object.keys(values).forEach((field: string) => {
