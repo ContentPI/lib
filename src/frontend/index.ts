@@ -149,3 +149,8 @@ export function getInitialState() {
 
   return {}
 }
+
+export function getCookie(name: string): string {
+  const cookie = `; ${document.cookie}`.match(`;\\s*${name}=([^;]+)`)
+  return cookie ? cookie[1] : ''
+}
